@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ems_entities.Parameters
+namespace EmployeeManagementSystem.Entities.Parameters
 {
-    internal class EmployeeParameters
+    public class EmployeeParameters: QueryStringParameters
     {
+        public EmployeeParameters()
+        {
+            OrderBy = "name";
+        }
+
+        public string Name { get; set; }
     }
 }
