@@ -1,6 +1,6 @@
 ﻿namespace EmployeeManagementSystem.Entities.Models
 {
-    public class EmployeeFunction
+    public class EmployeeFunction: IEntity
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

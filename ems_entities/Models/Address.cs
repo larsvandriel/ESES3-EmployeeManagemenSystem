@@ -1,6 +1,6 @@
 ﻿namespace EmployeeManagementSystem.Entities.Models
 {
-    public class Address
+    public class Address: IEntity
     {
         public Guid Id { get; set; }
         public string Country { get; set; }

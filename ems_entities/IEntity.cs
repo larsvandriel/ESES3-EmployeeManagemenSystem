@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeManagementSystem.Entities.Models
+namespace EmployeeManagementSystem.Entities
 {
-    public class Record: IEntity
+    public interface IEntity
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string FilePath { get; set; }
-
     }
 }
