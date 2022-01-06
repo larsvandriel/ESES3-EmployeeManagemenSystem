@@ -19,7 +19,7 @@ namespace EmployeeManagementSystem.Entities.Models
         public List<EmployeeFunction> Functions { get; set; }
         public List<Record> Records { get; set; }
         public Schedule Schedule { get; set; }
-        public SalaryController MyProperty { get; set; }
+        public SalaryController Salary { get; set; }
         public DateTime EmploymentDate { get; set; }
         public bool CurrentlyEmployed { get; set; }
         public DateTime TimeFired { get; set; }

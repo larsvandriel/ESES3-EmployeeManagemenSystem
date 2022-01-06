@@ -8,5 +8,7 @@
         public string PhoneNumber { get; set; }
         public Employee HeadOfDepartment { get; set; }
         public List<Employee> TeamLeads { get; set; }
+        public List<Employee> WorkerEmployees { get; set; }
+        public List<EmployeeFunction> EmployeeFunctions { get; set; }
     }
 }
