@@ -1,16 +1,15 @@
-﻿using DepartmentManagementSystem.API.Filters;
-using DepartmentManagementSystem.Contracts;
-using DepartmentManagementSystem.Entities;
-using DepartmentManagementSystem.Entities.Helpers;
-using DepartmentManagementSystem.Entities.Models;
-using DepartmentManagementSystem.Repository;
+﻿using EmployeeManagementSystem.API.Filters;
+using EmployeeManagementSystem.Contracts;
+using EmployeeManagementSystem.Entities;
+using EmployeeManagementSystem.Entities.Helpers;
+using EmployeeManagementSystem.Entities.Models;
+using EmployeeManagementSystem.Repository;
 using LoggingService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
-using Task = DepartmentManagementSystem.Entities.Models.Task;
 
-namespace InventoryManagementSystem.API.Extensions
+namespace EmployeeManagementSystem.API.Extensions
 {
     public static class ServiceExtensions
     {
@@ -46,22 +45,8 @@ namespace InventoryManagementSystem.API.Extensions
 
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
-            services.AddScoped<ISortHelper<Department>, SortHelper<Department>>();
-            services.AddScoped<IDataShaper<Department>, DataShaper<Department>>();
-            services.AddScoped<ISortHelper<EmployeeFunction>, SortHelper<EmployeeFunction>>();
-            services.AddScoped<IDataShaper<EmployeeFunction>, DataShaper<EmployeeFunction>>();
-            services.AddScoped<ISortHelper<Equipment>, SortHelper<Equipment>>();
-            services.AddScoped<IDataShaper<Equipment>, DataShaper<Equipment>>();
-            services.AddScoped<ISortHelper<Facility>, SortHelper<Facility>>();
-            services.AddScoped<IDataShaper<Facility>, DataShaper<Facility>>();
-            services.AddScoped<ISortHelper<Rule>, SortHelper<Rule>>();
-            services.AddScoped<IDataShaper<Rule>, DataShaper<Rule>>();
-            services.AddScoped<ISortHelper<Task>, SortHelper<Task>>();
-            services.AddScoped<IDataShaper<Task>, DataShaper<Task>>();
-            services.AddScoped<ISortHelper<Tool>, SortHelper<Tool>>();
-            services.AddScoped<IDataShaper<Tool>, DataShaper<Tool>>();
-            services.AddScoped<ISortHelper<Utility>, SortHelper<Utility>>();
-            services.AddScoped<IDataShaper<Utility>, DataShaper<Utility>>();
+            services.AddScoped<ISortHelper<Employee>, SortHelper<Employee>>();
+            services.AddScoped<IDataShaper<Employee>, DataShaper<Employee>>();
 
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Net.Http.Headers;
 
-namespace DepartmentManagementSystem.API.Filters
+namespace EmployeeManagementSystem.API.Filters
 {
     public class ValidateMediaTypeAttribute: IActionFilter
     {

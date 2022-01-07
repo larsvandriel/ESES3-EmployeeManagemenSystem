@@ -10,8 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\LoggingService\LoggingService.csproj" />
+    <ProjectReference Include="..\ems_contracts\ems_contracts.csproj" />
+    <ProjectReference Include="..\ems_entities\ems_entities.csproj" />
+    <ProjectReference Include="..\ems_repository\ems_repository.csproj" />
   </ItemGroup>
 
 </Project>
